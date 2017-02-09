@@ -1,0 +1,52 @@
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+.dark section {
+    margin: 0;
+}
+
+.dark {
+    background-color: #4F4F4F;
+    color: #F0F0F0;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.semesters h2 {
+    text-align: center;
+}
+
+.core-element {
+    margin-bottom: 30px;
+}
+
+.read-more {
+    display: none;
+}
+
+.read-more-toggle {
+    border: none;
+    outline: none;
+    padding: 0;
+    background: transparent;
+    color: #21CCAD;
+}
+
+.read-more-toggle:after {
+    content: '\2192';
+    margin-left: 10px;
+}
