@@ -16,13 +16,15 @@ section {
 }
 
 .dark {
-    background-color: #4F4F4F;
+    background-color: #383838;
     color: #F0F0F0;
     margin-bottom: 50px;
     padding: 50px;
 }
 
-
+.dark:last-of-type {
+    margin: 0;
+}
 
 h2 {
     margin-bottom: 30px;
@@ -46,17 +48,25 @@ h3 {
 
 .read-more-toggle {
     outline: none;
-    border: 3px solid #21CCAD;
+    border: none;
     background: transparent;
-    color: #21CCAD;
+    color: #49AAC4;
+    font-size: 16px;
+    padding: 3px 0;
+    transition: transform .2s;
+    /*display: inline-block;
+    border-bottom: 2px solid #49AAC4;*/
 }
 
 .read-more-toggle:hover {
-    background: #21CCAD;
-    color: #F0F0F0;
+    transform: translateX(5px);
 }
 
 .read-more-toggle:after {
     content: '\2192';
     margin-left: 10px;
+}
+
+.read-more-toggle-container {
+    text-align: right;
 }
