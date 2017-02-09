@@ -7,6 +7,10 @@ section {
     margin-bottom: 50px;
 }
 
+.content {
+    padding: 0 50px;
+}
+
 .dark section {
     margin: 0;
 }
@@ -14,9 +18,11 @@ section {
 .dark {
     background-color: #4F4F4F;
     color: #F0F0F0;
-    padding: 50px;
     margin-bottom: 50px;
+    padding: 50px;
 }
+
+
 
 h2 {
     margin-bottom: 30px;
@@ -39,11 +45,15 @@ h3 {
 }
 
 .read-more-toggle {
-    border: none;
     outline: none;
-    padding: 0;
+    border: 3px solid #21CCAD;
     background: transparent;
     color: #21CCAD;
+}
+
+.read-more-toggle:hover {
+    background: #21CCAD;
+    color: #F0F0F0;
 }
 
 .read-more-toggle:after {

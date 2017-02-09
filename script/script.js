@@ -21,8 +21,6 @@ $(document).ready(function() {
     // Read more
     $('.read-more-toggle').on('click', function() {
 
-        console.log($(this).parent());
-
         $(this).parent().find('.read-more').slideToggle();
         $(this).hide();
     });
