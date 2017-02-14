@@ -46,6 +46,10 @@ h3 {
     display: none;
 }
 
+.read-more.visible {
+    display: block;
+}
+
 .read-more-toggle {
     outline: none;
     border: none;
@@ -54,9 +58,9 @@ h3 {
     font-size: 16px;
     padding: 3px 0;
     transition: transform .2s;
-    /*display: inline-block;
-    border-bottom: 2px solid #49AAC4;*/
 }
+
+
 
 .read-more-toggle:hover {
     transform: translateX(5px);
@@ -65,8 +69,30 @@ h3 {
 .read-more-toggle:after {
     content: '\2192';
     margin-left: 10px;
+    display: inline-block;
 }
 
 .read-more-toggle-container {
     text-align: right;
+}
+
+.read-more-toggle.open:hover {
+    transform: translateX(-5px);
+}
+
+.read-more-toggle.open:after {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+
+
+/* v2 */
+
+.container li {
+    margin-bottom: 10px;
+}
+
+.navbar a {
+    transition: all .2s;
 }
