@@ -19,7 +19,7 @@ section {
     background-color: #383838;
     color: #F0F0F0;
     margin-bottom: 50px;
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .dark:last-of-type {
@@ -95,4 +95,67 @@ h3 {
 
 .navbar a {
     transition: all .2s;
+}
+
+.container {
+    position: relative;
+}
+
+.image-icon {
+    height: 200px;
+    position: absolute;
+}
+
+.image-icon.right {
+    right: -250px;
+}
+
+.image-icon.left {
+    left: -250px;
+}
+
+.semesters-image {
+    display: block;
+    margin: 50px auto 0 auto;
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+.tagline {
+    margin: 0;
+}
+
+@media (max-width: 1330px) {
+    .image-icon {
+        height: 100px;
+    }
+    .image-icon.left {
+        left: -70px;
+    }
+}
+
+@media (max-width: 900px) {
+    .image-icon {
+        height: 50px;
+    }
+    .image-icon.left {
+        left: -20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .image-icon.left {
+        left: 10px;
+        top: -60px;
+    }
+}
+
+@media (max-width: 560px) {
+    .semesters-image {
+        display: none;
+    }
 }
